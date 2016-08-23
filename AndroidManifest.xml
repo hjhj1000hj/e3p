@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jiuzhida.e3p.android"
+    android:versionCode="100"
+    android:versionName="1.0.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.jiuzhida.e3p.android.common.application.BestApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.NoTitleBar" >
+		<!-- production  701b0bd01d7a7b83bc0ad29c5f2bf98c -->
+        <!-- xushikai bd42b55eb6d3507c4d381abada4dba4d -->
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="bd42b55eb6d3507c4d381abada4dba4d" />
+
+        <activity
+            android:name="com.jiuzhida.e3p.android.login.handler.LoginActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jiuzhida.e3p.android.main.handler.MainTopActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.main.handler.MainDeliverActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.delivery.shipping.handler.OrderWaitingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.delivery.shipping.handler.OrderRunningActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.delivery.shipping.handler.OrderConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.delivery.shipping.handler.OrderReceiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.delivery.shipping.handler.PaymentMethodActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.delivery.shipping.handler.OrderShippingRouteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.delivery.shipping.handler.SimpleNaviActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.delivery.order.handler.OrderListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.delivery.order.handler.OrderCustomSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.delivery.order.handler.OrderCustomSearchResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.main.handler.AppInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.delivery.members.handler.MemberListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.delivery.members.handler.MemberSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.delivery.members.handler.MemberListDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.main.handler.MainReportActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.reports.handler.ProductSaleReportActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.reports.handler.ProductSaleDetailReportActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.reports.handler.TopProductReportActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.reports.handler.CallSumReportActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.reports.handler.DepartmentSaleActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.reports.handler.PurchaseOrderReportActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.reports.handler.PaymentMethodReportActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.reports.handler.SumRegionSaleReportActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.reports.handler.BigWareHouseTransfer"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.reports.handler.SupplierPurchaseActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.reports.handler.CustomerNumberAcitivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.reports.handler.StockDistributionActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.reports.handler.GoodsSaleReportActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.reports.handler.SumIntegratedSaleActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.jiuzhida.e3p.android.reports.handler.SingleChartActivity"
+            android:screenOrientation="landscape" />
+    </application>
+
+</manifest>
